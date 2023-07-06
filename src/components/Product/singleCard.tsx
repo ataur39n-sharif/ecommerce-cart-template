@@ -1,4 +1,4 @@
-import {MDBBtn, MDBCardImage, MDBCol, MDBIcon, MDBInput, MDBRow, MDBTooltip, MDBTypography} from "mdb-react-ui-kit";
+import {MDBBtn, MDBCardImage, MDBCol, MDBIcon, MDBInput, MDBRow, MDBTypography} from "mdb-react-ui-kit";
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -38,10 +38,9 @@ const SingleCard = ({fields}) => {
                 </MDBTypography>
             </MDBCol>
             <MDBCol md="1" lg="1" xl="1" className="text-end">
-                <MDBTooltip wrapperProps={{ size: "sm" }} wrapperClass="me-1 mb-2"
-                            title="Remove item">
-                    <MDBIcon fas icon="trash" />
-                </MDBTooltip>
+                <MDBBtn className="px-3 me-2">
+                    <MDBIcon fas icon="trash"/>
+            </MDBBtn>
             </MDBCol>
         </MDBRow>
 

@@ -31,6 +31,7 @@ export default function Cart({products}) {
                                                 </MDBTypography>
                                                 <MDBTypography className="mb-0 text-muted">
                                                     <select className="select p-2 rounded bg-grey" style={{ width: "100%" }}>
+                                                        <option value={undefined}>Default</option>
                                                         <option value={5}>5 items</option>
                                                         <option value={10}>10 items</option>
                                                         <option value={15}>15 items</option>
@@ -63,10 +64,11 @@ export default function Cart({products}) {
 
                                             <div className="mb-4 pb-2">
                                                 <select className="select p-2 rounded bg-grey" style={{ width: "100%" }}>
-                                                    <option value="5">Regular-Delivery- $5.00</option>
-                                                    <option value="15">Standard-Delivery- $15.00</option>
-                                                    <option value="25">Home-Delivery- $25.00</option>
-                                                    <option value="35">Premium-Delivery- $35.00</option>
+                                                    <option value={0}>--Select-Delivery--</option>
+                                                    <option value={5}>Regular-Delivery- $5.00</option>
+                                                    <option value={15}>Standard-Delivery- $15.00</option>
+                                                    <option value={25}>Home-Delivery- $25.00</option>
+                                                    <option value={35}>Premium-Delivery- $35.00</option>
                                                 </select>
                                             </div>
 
